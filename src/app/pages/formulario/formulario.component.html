@@ -1,0 +1,25 @@
+
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="nombreReceta">Nombre de la Receta:</label>
+          <input type="text" id="nombreReceta" formControlName="nombre" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="ingredientes">Ingredientes:</label>
+          <textarea id="ingredientes" formControlName="ingredientes" required></textarea>
+        </div>
+      
+        <div class="form-group">
+          <label for="pasos">Pasos:</label>
+          <textarea id="pasos" formControlName="pasos" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="imagen">Imagen:</label>
+          <textarea id="imagen" formControlName="imagen" required></textarea>
+        </div>
+      
+        <button type="submit" [disabled]="formulario.invalid">Agregar Receta</button>
+      </form>
+      
+
