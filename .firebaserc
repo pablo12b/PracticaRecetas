@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "practicaclase-460cf": {
+      "hosting": {
+        "PracticaClase": [
+          "practicaclase-460cf"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "practicaclase-460cf"
+  }
+}
